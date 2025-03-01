@@ -168,3 +168,4 @@ C:\Users\MANJOOR\source\repos\bloggie\bloggie.web\obj\Debug\net8.0\bloggie.web.g
 C:\Users\MANJOOR\source\repos\bloggie\bloggie.web\obj\Debug\net8.0\ref\bloggie.web.dll
 C:\Users\MANJOOR\source\repos\bloggie\bloggie.web\bin\Debug\net8.0\CloudinaryDotNet.dll
 C:\Users\MANJOOR\source\repos\bloggie\bloggie.web\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\MANJOOR\source\repos\bloggie\bloggie.web\obj\Debug\net8.0\bloggie.web.sourcelink.json
