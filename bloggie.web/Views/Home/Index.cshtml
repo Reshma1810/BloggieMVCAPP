@@ -1,7 +1,7 @@
-﻿@model List<bloggie.web.Models.Domain.Blogpost>
+﻿@model bloggie.web.Models.viewModels.HomeView
 
 @{
-
+    ViewData["Title"] = "Home Page";
 }
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-5 py-5">
@@ -22,12 +22,35 @@
     </div>
 </div>
 
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 d-flex">
+            @if(Model != null)
+            {
+                foreach (var tag in Model.Tags)
+                {
+                    <span class="badge bg-dark me-1">
+                       @tag.Name
+                    </span>
+                    
+                }
+            }
+
+        </div>
+            
+    </div>
+</div>
+
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-6">
-            @if (Model != null && Model.Any())
+            @if (Model != null && Model.BlogPosts.Any())
             {
-                foreach (var blogPost in Model)
+                foreach (var blogPost in Model.BlogPosts)
                 {
 
                     Console.WriteLine("blogPost check", blogPost);
